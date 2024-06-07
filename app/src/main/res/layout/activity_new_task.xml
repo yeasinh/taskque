@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232F3A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="#0B1825"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="Create New Task"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bgitemdoes"
+        android:orientation="vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="45dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Task Title"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/titledoes"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textColorHint="#B5B5B5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etdescription"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/bginputtask"
+                android:gravity="top|left"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textColorHint="#B5B5B5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bgitemdoes"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/tvtimeline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@drawable/bgitemdoes"
+                android:text="Timelines"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Save important notes"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-60dp"
+                android:src="@drawable/ic_baseline_add_24"></ImageButton>
+
+        </LinearLayout>-->
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvlinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Save class/meeting links"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-60dp"
+                android:src="@drawable/ic_baseline_add_24"></ImageButton>
+        </LinearLayout>-->
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taskType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingTop="12dp"
+                android:text="Task type"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-40dp"
+                android:src="@drawable/ic_drop_down">
+
+            </ImageButton>
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp">
+
+        <!--<Button
+            android:id="@+id/btnCancel"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bgbtncancel"
+            android:fontFamily="sans-serif"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#AFAFAF"
+            android:textSize="22sp"
+            android:textStyle="bold" />-->
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="60dp"
+            android:text="Cancel"
+            android:textColor="@drawable/button_color_change"
+            android:textSize="17sp" />
+
+        <!--<Button
+            android:id="@+id/btnSaveTask"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/bgbtncreate"
+            android:fontFamily="sans-serif"
+            android:onClick="btnSaveData"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />-->
+        <Button
+            android:id="@+id/btnSaveTask"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:text="Save"
+            android:textColor="@drawable/button_color_change"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <!-- <Spinner
+        android:id="@+id/spinner_dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="34dp"
+        tools:ignore="MissingConstraints" />-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="367dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        android:elevation="6dp"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+
+    <TextView
+        android:id="@+id/datePickerText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timePickerText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="168dp"
+        android:text="Select Time"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/datePickerButton_id"
+        style="?android:spinnerStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:onClick="openDatePicker"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="336dp"
+        android:layout_height="338dp"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePickerText_id"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/setbtn_Timeline"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="Set"
+            android:textColor="@drawable/button_color_change"
+
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/cancelBtn_timeline"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@drawable/button_color_change"
+
+
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:id="@+id/select_date_time"
+         android:layout_width="250dp"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         tools:ignore="MissingConstraints">
+
+
+         <Button
+             android:id="@+id/select_date"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:text="Select Date"
+             android:layout_margin="20dp"
+             android:elevation="1dp"
+             style="?android:attr/buttonBarButtonStyle"/>
+
+         <Button
+             android:id="@+id/select_time"
+             android:layout_width="match_parent"
+             android:elevation="1dp"
+             android:layout_height="60dp"
+             android:text="Select Time"
+             android:layout_margin="20dp"
+             style="?android:attr/buttonBarButtonStyle"/>
+
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         tools:ignore="MissingConstraints">
+
+
+         <Button
+             android:id="@+id/set_button"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="match_parent"
+             android:text="Set"
+             android:layout_marginBottom="40dp"
+             android:layout_marginHorizontal="32dp"
+             style="?android:attr/buttonBarButtonStyle"
+
+              />
+
+         <Button
+             android:id="@+id/cancel_button"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Cancel"
+             android:layout_marginBottom="40dp"
+             android:layout_height="match_parent"
+             android:layout_marginHorizontal="32dp"
+             style="?android:attr/buttonBarButtonStyle"/>
+
+
+     </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

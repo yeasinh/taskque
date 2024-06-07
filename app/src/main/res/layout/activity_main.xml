@@ -1,0 +1,165 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0B1825">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/button_textvie"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="ExtraText,UselessParent">
+
+
+        <!--<CalendarView
+            android:elevation="6dp"
+            android:id="@+id/calendarView"
+            android:layout_width="338dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/calaender_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037"
+            tools:ignore="MissingConstraints">
+
+
+        </CalendarView> -->
+
+
+
+           <TextView
+            android:id="@+id/textview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hkfkjfkskfg"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="48sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/home_recyclar_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <Button
+                android:id="@+id/pending_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+
+                android:layout_marginLeft="17sp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="Pending"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/overdue_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Overdue"
+                android:textColor="@drawable/button_color_change"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginHorizontal="0dp"/>
+
+
+        </LinearLayout>
+       </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recyclerview_holder"
+        android:layout_width="match_parent"
+        android:layout_height="578dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/activity_main_floatingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="24dp"
+
+
+            android:layout_marginBottom="24dp"
+            android:background="#FF03DAC5"
+            android:contentDescription="TODO"
+            android:elevation="6dp"
+            android:src="@drawable/ic_baseline_create_24"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- <FrameLayout
+         android:id="@+id/home_framlayout"
+         android:layout_width="380dp"
+         android:layout_height="420dp"
+         android:layout_margin="240dp"
+         android:elevation="6dp"
+         app:layout_constraintBottom_toBottomOf="@+id/home_recycler_view"
+         app:layout_constraintTop_toBottomOf="@+id/button_layout"
+         tools:ignore="MissingConstraints"
+         tools:layout_editor_absoluteX="16dp" />-->
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
